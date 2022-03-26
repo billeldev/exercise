@@ -103,17 +103,6 @@ ul li:nth-child(3) {
   -o-border-radius: 5px;
 }
 
-/* .fa-plus::after {
-  visibility: hidden;
-  content: "";
-  position: relative;
-  left: 27px;
-  bottom: 23px;
-  display: block;
-  border: 15px solid;
-  border-color: transparent rgb(75, 75, 75) transparent transparent;
-} */
-
 .fa-plus:hover .tooltip1 {
   visibility: visible;
 }
@@ -200,6 +189,7 @@ ul li:nth-child(3) {
   position: relative;
   top: 10px;
 }
+
 button {
   padding: 15px;
   width: 100%;
@@ -209,6 +199,15 @@ button {
   border-radius: 5px;
   color: rgb(72 72 72);
   font-weight: bold;
+}
+
+.material-icons {
+  margin: 10px 10px 0 0;
+}
+
+.content h4,
+.content p {
+  margin: 5px 0 0 10px;
 }
 .display {
   grid-column: 3 / 4;
