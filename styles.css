@@ -78,9 +78,6 @@ ul li:nth-child(3) {
 .menu i:hover {
   background-color: rgb(75, 75, 163);
 }
-/* .menu i:not(:last-child) {
-  margin-bottom: 20px;
-} */
 
 .menu i:nth-child(2) {
   background-color: rgb(75, 75, 163);
@@ -168,26 +165,36 @@ ul li:nth-child(3) {
   border: 2px solid #0b5ed7;
 }
 
-.basic-blocks div p {
-  margin-left: 45px;
-}
-
 .basic-blocks div i {
   font-size: 25px;
-  margin-right: 15px;
-  position: relative;
-  top: 10px;
-}
-
-.embeds div p {
-  margin-left: 45px;
 }
 
 .embeds div i {
   font-size: 25px;
-  margin-right: 15px;
+}
+.basic-blocks > div,
+.embeds > div {
   position: relative;
-  top: 10px;
+}
+
+.basic-blocks h4,
+.embeds h4 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.basic-blocks p,
+.embeds p {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+.basic-blocks i,
+.embeds i {
+  position: absolute;
+  left: 8%;
+  top: 21%;
 }
 
 button {
@@ -202,13 +209,11 @@ button {
 }
 
 .material-icons {
-  margin: 10px 10px 0 0;
+  opacity: 50%;
+  position: absolute;
+  top: 21%;
 }
 
-.content h4,
-.content p {
-  margin: 5px 0 0 10px;
-}
 .display {
   grid-column: 3 / 4;
   grid-row: 1 / 3;
