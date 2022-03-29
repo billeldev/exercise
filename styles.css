@@ -143,7 +143,7 @@ ul li:nth-child(3) {
 .basic-blocks div,
 .embeds div {
   height: 100px;
-  cursor: grab;
+  cursor: move;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -155,7 +155,9 @@ ul li:nth-child(3) {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-
+.dragging {
+  opacity: 0.5;
+}
 .embeds {
   margin-top: 30px;
 }
@@ -180,21 +182,21 @@ ul li:nth-child(3) {
 .basic-blocks h4,
 .embeds h4 {
   position: absolute;
-  top: 10%;
+  top: 24%;
   left: 15%;
 }
 
 .basic-blocks p,
 .embeds p {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 15%;
 }
 .basic-blocks i,
 .embeds i {
   position: absolute;
   left: 8%;
-  top: 21%;
+  top: 30%;
 }
 
 button {
@@ -211,7 +213,7 @@ button {
 .material-icons {
   opacity: 50%;
   position: absolute;
-  top: 21%;
+  top: 30%;
 }
 
 .display {
@@ -234,6 +236,7 @@ button {
   border: 2px dotted #ccc;
   background-color: rgb(241, 246, 248);
   color: rgb(105, 105, 105);
+  min-height: 70px;
 }
 
 .blocks-container span {
